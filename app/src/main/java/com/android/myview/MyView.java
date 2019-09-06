@@ -13,13 +13,13 @@ import android.view.View;
  * author : zf
  * date   : 2019/9/6
  * You are the best.
- *  基础
+ *  基础一 Paint and Canvas 的使用
  */
 public class MyView extends View {
 
     private Paint paint; //圆形
     private Paint paint2; //矩形
-    private Paint paint3;
+    private Paint paint3;//文本
 
 
     public MyView(Context context) {
@@ -43,7 +43,11 @@ public class MyView extends View {
         paint2.setAntiAlias(true);//抗锯齿
 
         paint3 = new Paint();
-
+        paint3.setColor(0xaaDDF000);
+        paint3.setStyle(Paint.Style.STROKE);
+        paint3.setStrokeWidth(1);
+        paint3.setTextSize(26*2);//字体大小
+        paint3.setAntiAlias(true);//抗锯齿
 
 
     }
@@ -64,7 +68,8 @@ public class MyView extends View {
         RectF rectF = new RectF(100, 320, (100+400), (320+400) );
         //绘制圆角矩形
         canvas.drawRoundRect(rectF,10,10,paint2);
-
+        //绘制文本
+        canvas.drawText("跟党走，打胜仗！",100,300,paint3);
 
 
     }
