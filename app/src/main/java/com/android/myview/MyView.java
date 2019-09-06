@@ -3,8 +3,6 @@ package com.android.myview;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Point;
-import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
@@ -56,6 +54,13 @@ public class MyView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        /**
+         *    X = 子View左上角距父View的距离
+         *    Y =  子View右下角距父view顶部的距离
+         *    radius = 半径
+         */
+        //绘制圆行
         canvas.drawCircle(300,110,100,paint);
 
         /**   RectF设置矩形的位置
@@ -63,10 +68,9 @@ public class MyView extends View {
          *  top  子view左上角距离父view左上方距离
          *  right 子view右下角距父view左边的距离  （决定画出的矩形宽度  矩形的宽 = left（子View距父view左边的距离）+ 你想要的宽度）
          *  bottom 子view底部距父view顶部的距离    （决定画出矩形的高度  同上   top+你想要的高度   ）
-         *
          */
-        RectF rectF = new RectF(100, 320, (100+400), (320+400) );
         //绘制圆角矩形
+        RectF rectF = new RectF(100, 320, (100+400), (320+300) );
         canvas.drawRoundRect(rectF,10,10,paint2);
         //绘制文本
         canvas.drawText("跟党走，打胜仗！",100,300,paint3);
