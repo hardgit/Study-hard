@@ -102,23 +102,9 @@ public class MyView extends View {
        paint.setStyle(Paint.Style.STROKE);
        canvas.drawArc(arcRectF,180,60,false,paint);
 
-//       paint.setStyle(Paint.Style.FILL);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            path.addArc(200, 200, 400, 400, -225, 225);
-//        }
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            path.arcTo(400, 200, 600, 400, -180, 225, false);
-//        }
-//        path.lineTo(400, 542);
-//       canvas.drawPath(path,paint);
 
         canvas.translate(200,getWidth()-200);//移动坐标系到中心点
-        paint.setStrokeWidth(1);//线的粗细
-//        path.lineTo(200,200);//画线
-//        path.moveTo(200,200);//改变下一次的起点
-//        path.lineTo(200,0);
-//        canvas.drawPath(path,paint);
-
+        paint.setStrokeWidth(2);//线的粗细
         path.lineTo(0,400);//画线
         path.lineTo(800,400);
         canvas.drawPath(path,paint);
@@ -131,8 +117,6 @@ public class MyView extends View {
             Log.e("TAG",width+50+"------"+455);
             width = width+200;
         }
-//        path.addRect(200,200,400,400, Path.Direction.CCW);
-//        path.setLastPoint(300,600);
-//        canvas.drawPath(path,paint);
+
     }
 }
