@@ -28,6 +28,15 @@
         android:visibility="gone"/>
     <com.android.myview.MyTextView5
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.android.myview.MyView6
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.android.myview.MyView7
+        android:id="@+id/myview8"
+        android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
