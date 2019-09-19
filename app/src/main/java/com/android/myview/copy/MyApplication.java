@@ -1,4 +1,4 @@
-package com.android.myview;
+package com.android.myview.copy;
 
 import android.app.Application;
 import android.content.Context;

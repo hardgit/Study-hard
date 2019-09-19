@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
         android:visibility="gone"/>
-    <com.android.myview.MyTextView5
+    <com.android.myview.text.MyTextView5
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
@@ -35,8 +35,143 @@
         android:layout_height="match_parent"
         android:visibility="gone"/>
     <com.android.myview.MyView7
-        android:id="@+id/myview8"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.android.myview.MyView8
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/batman"
+        android:foreground="#99000000"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.text.MyTextView1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOD GOOD STUDY DAY DAY UP!"
+        android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.MyView9
+        android:id="@+id/donghua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="LinearInterpolator" />
+        <Button
+            android:id="@+id/btn_run2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="AnticipateInterpolator" />
+        <Button
+            android:id="@+id/btn_run3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="AccelerateInterpolator" />
+        <Button
+            android:id="@+id/btn_run4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="AnticipateOvershootInterpolator" />
+        <Button
+            android:id="@+id/btn_run5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="AccelerateDecelerateInterpolator" />
+        <Button
+            android:id="@+id/btn_run6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="DecelerateInterpolator" />
+        <Button
+            android:id="@+id/btn_run7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="BounceInterpolator" />
+        <Button
+            android:id="@+id/btn_run8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="CycleInterpolator(2)" />
+        <Button
+            android:id="@+id/btn_run9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="OvershootInterpolator" />
+        <Button
+            android:id="@+id/btn_run10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="FastOutLinearInInterpolator" />
+        <Button
+            android:id="@+id/btn_run11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="PathInterpolator()" />
+    </LinearLayout>
+    <com.android.myview.MyViewX
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.MyViewX1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.MyViewX2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.practice.MyLikenum
+        android:id="@+id/mylikenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+    <com.android.myview.MyViewX3
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <com.android.myview.practice.LikeView
+        android:id="@+id/likeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

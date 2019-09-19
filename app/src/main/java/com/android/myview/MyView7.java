@@ -66,7 +66,7 @@ public class MyView7 extends View {
                                 left,bottom//右下
                                };
         camera = new Camera();//三维变换
-        //动画   propertyName 需定义好方法  取方法名做参数
+        //动画   propertyName 需定义好方法  取方法名做参数                            起始值，目标值
         animator = ObjectAnimator.ofInt(this, "rotateX", 0, 360);
         animator.setDuration(2000);
         animator.setInterpolator(new LinearInterpolator());//插值器
